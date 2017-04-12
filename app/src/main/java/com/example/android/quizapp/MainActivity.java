@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     public CountDownTimer Timer = null;
     public TextView timer;
-    public long time_allowed = 4*1000;
+    public long time_allowed = 20*1000;
 
     public TextView question_View;
     public ImageView photo;
