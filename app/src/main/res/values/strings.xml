@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Memory Test</string>
+    <string name="watchThis">Look carefully at this picture</string>
+
+    <string name="question1">How many fish are there in the picture?</string>
+    <string name="q1answer1">6</string>
+    <string name="q1answer2">9</string>
+    <string name="q1answer3">12</string>
+    <string name="q1answer4">14</string>
+
+    <string name="question2">What animal was standing on the horse?</string>
+    <string name="q2answer1">Cat</string>
+    <string name="q2answer2">Dog</string>
+    <string name="q2answer3">Rooster</string>
+    <string name="q2answer4">Duck</string>
+
+    <string name="question3">What animals were present in the picture?</string>
+    <string name="q3answer1">Elephant</string>
+    <string name="q3answer2">Lemur</string>
+    <string name="q3answer3">Rhinoceros</string>
+    <string name="q3answer4">Flamingo</string>
+
+    <string name="question4">What was the word we asked you to remember at the beginning of the quiz?</string>
+    <string name="q4answer1"></string>
+    <string name="q4answer2"></string>
+    <string name="q4answer3"></string>
+    <string name="q4answer4"></string>
+
+    <string name="question5"></string>
+    <string name="q5answer1"></string>
+    <string name="q5answer2"></string>
+    <string name="q5answer3"></string>
+    <string name="q5answer4"></string>
+</resources>

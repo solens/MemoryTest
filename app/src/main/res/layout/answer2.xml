@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.quizapp.MainActivity"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/question2"
+            style="@style/Questions"
+            android:id="@+id/question"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/q2answer1"
+                android:id="@+id/q2ans1"
+                android:layout_margin="8dp"
+                />
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/q2answer2"
+                android:id="@+id/q2ans2"
+                android:layout_margin="8dp"
+                />
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/q2answer3"
+                android:id="@+id/q2ans3"
+                android:layout_margin="8dp"
+                />
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/q2answer4"
+                android:id="@+id/q2ans4"
+                android:layout_margin="8dp"
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/Answers"
+            android:id="@+id/bottomText2"/>
+
+        <TextView
+            style="@style/Answers"
+            android:id="@+id/bottomText2bis"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="Answer2"
+            android:id="@+id/submit2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:clickable="false"
+            android:enabled="false"
+            android:onClick="startQuestion3"
+            android:id="@+id/next2"/>
+
+    </LinearLayout>

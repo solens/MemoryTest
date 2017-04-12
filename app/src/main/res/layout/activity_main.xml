@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Questions"
+        android:text="Are you Ready to start? \n The questions will be timed, so pay attention. Before you start, remember the word:"
+        android:layout_margin="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banana"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:onClick="startQuiz"
+        />
+</LinearLayout>
