@@ -21,14 +21,4 @@
     <string name="q3answer4">Flamingo</string>
 
     <string name="question4">What was the word we asked you to remember at the beginning of the quiz?</string>
-    <string name="q4answer1"></string>
-    <string name="q4answer2"></string>
-    <string name="q4answer3"></string>
-    <string name="q4answer4"></string>
-
-    <string name="question5"></string>
-    <string name="q5answer1"></string>
-    <string name="q5answer2"></string>
-    <string name="q5answer3"></string>
-    <string name="q5answer4"></string>
 </resources>

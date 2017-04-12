@@ -26,14 +26,6 @@ public class MainActivity extends AppCompatActivity {
     public TextView timer;
     public long time_allowed = 20*1000;
 
-    public TextView question_View;
-    public ImageView photo;
-
-    private String answer1;
-    private String answer2;
-    private String answer3;
-    private String answer4;
-
     public int rightAnswers = 0;
 
     public int question_in_progress;
