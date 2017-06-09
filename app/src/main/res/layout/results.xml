@@ -6,7 +6,7 @@
 
     <TextView
         style="@style/Questions"
-        android:text="Well Done, you have completed the test! Your final score is:" />
+        android:text="@string/end_page" />
 
     <TextView
         style="@style/Answers"

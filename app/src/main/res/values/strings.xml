@@ -21,4 +21,12 @@
     <string name="q3answer4">Flamingo</string>
 
     <string name="question4">What was the word we asked you to remember at the beginning of the quiz?</string>
+    <string name="right_answer">Right!</string>
+    <string name="wrong_answer">Wrong. The answer was:</string>
+    <string name="q3wrong_answer">Wrong. There was an elephant, a lemur and a rhinoceros, but no flamingo.</string>
+    <string name="secret_word">banana</string>
+    <string name="secret_word_wrong_answer">We were looking for: Banana</string>
+    <string name="end_page">Well Done, you have completed the test! Your final score is:</string>
+
+
 </resources>

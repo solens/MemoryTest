@@ -19,35 +19,35 @@
             android:gravity="center_horizontal">
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="@dimen/check_size"
                 android:layout_height="wrap_content"
                 android:text="@string/q2answer1"
                 android:id="@+id/q2ans1"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small_margin"
                 />
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="@dimen/check_size"
                 android:layout_height="wrap_content"
                 android:text="@string/q2answer2"
                 android:id="@+id/q2ans2"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small_margin"
                 />
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="@dimen/check_size"
                 android:layout_height="wrap_content"
                 android:text="@string/q2answer3"
                 android:id="@+id/q2ans3"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small_margin"
                 />
 
             <RadioButton
-                android:layout_width="150dp"
+                android:layout_width="@dimen/check_size"
                 android:layout_height="wrap_content"
                 android:text="@string/q2answer4"
                 android:id="@+id/q2ans4"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small_margin"
                 />
 
 

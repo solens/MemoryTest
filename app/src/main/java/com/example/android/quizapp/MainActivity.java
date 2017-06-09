@@ -25,11 +25,8 @@ public class MainActivity extends AppCompatActivity {
     public CountDownTimer Timer = null;
     public TextView timer;
     public long time_allowed = 20*1000;
-
     public int rightAnswers = 0;
-
     public int question_in_progress;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +38,11 @@ public class MainActivity extends AppCompatActivity {
         startQuestion1();
     }
 
-
     public void startQuestion1(){
         setContentView(R.layout.question1);
         question_in_progress = 1;
 
         startTimer();
-
     }
 
     public void Answer1(View v){
@@ -61,16 +56,14 @@ public class MainActivity extends AppCompatActivity {
 
         if (ans.isChecked()){
             rightAnswers += 1;
-            bottomText.setText("Right!");
+            bottomText.setText(R.string.right_answer);
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
             NextButton.setClickable(true);
             NextButton.setEnabled(true);
-
         }
-
         else {
-            bottomText.setText("Wrong. The answer was:");
+            bottomText.setText(R.string.wrong_answer);
             rightAnswer.setText(R.string.q1answer3);
 
             SubmitButton.setClickable(false);
@@ -86,15 +79,12 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText( context, text, duration);
         toast.setGravity(Gravity.BOTTOM|Gravity.END,0,10);
         toast.show();
-
-
     }
 
     public void startQuestion2(View v){
         setContentView(R.layout.question2);
         question_in_progress = 2;
         startTimer();
-
     }
 
     public void Answer2(View v){
@@ -103,12 +93,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button SubmitButton = (Button) findViewById(R.id.submit2);
         Button NextButton = (Button) findViewById(R.id.next2);
-
         RadioButton ans = (RadioButton) findViewById(R.id.q2ans2);
 
         if (ans.isChecked()){
             rightAnswers += 1;
-            bottomText.setText("Right!");
+            bottomText.setText(R.string.right_answer);
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
             NextButton.setClickable(true);
@@ -117,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else {
-            bottomText.setText("Wrong. The answer was:");
+            bottomText.setText(R.string.wrong_answer);
             rightAnswer.setText(R.string.q2answer2);
 
             SubmitButton.setClickable(false);
@@ -141,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
         question_in_progress = 3;
 
         startTimer();
-
     }
 
     public void Answer3(View v){
@@ -157,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (ans1.isChecked() && ans2.isChecked() && ans3.isChecked() && !(ans4.isChecked())){
             rightAnswers += 1;
-            bottomText.setText("Right!");
+            bottomText.setText(R.string.right_answer);
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
             NextButton.setClickable(true);
@@ -165,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else {
-            bottomText.setText("Wrong. There was an elephant, a lemur and a rhinoceros, but no flamingo.");
+            bottomText.setText(R.string.q3wrong_answer);
 
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
@@ -183,14 +171,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Answer4page(View v){
-
         setContentView(R.layout.answer4);
         question_in_progress = 4;
-
     }
 
     public void Answer4(View v){
-
         TextView bottomText = (TextView) findViewById(R.id.bottomText4);
 
         Button SubmitButton = (Button) findViewById(R.id.submit4);
@@ -199,9 +184,9 @@ public class MainActivity extends AppCompatActivity {
         EditText secret = (EditText) findViewById(R.id.secretWord);
         String secret_word = secret.getText().toString().toLowerCase();
 
-        if (secret_word.equals("banana")){
+        if (secret_word.equals(R.string.secret_word)){
             rightAnswers += 1;
-            bottomText.setText("Right!");
+            bottomText.setText(R.string.right_answer);
 
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
@@ -209,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
             NextButton.setEnabled(true);
         }
         else {
-            bottomText.setText("We were looking for: Banana");
+            bottomText.setText(R.string.secret_word_wrong_answer);
 
             SubmitButton.setClickable(false);
             SubmitButton.setEnabled(false);
@@ -234,8 +219,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Restart(View v){
-        Intent i = getBaseContext().getPackageManager()
-                .getLaunchIntentForPackage( getBaseContext().getPackageName() );
+        Intent i = getBaseContext().getPackageManager().getLaunchIntentForPackage( getBaseContext().getPackageName() );
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
     }
